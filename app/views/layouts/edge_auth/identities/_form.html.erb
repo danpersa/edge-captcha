@@ -1,0 +1,15 @@
+<%= simple_form_for @user, :builder => SupersizeFormBuilder do |f| %>
+  <%= render :partial => "layouts/flash", :locals => {:flash => flash} %>
+  <%= f.input :username, :autofocus => :true, :placeholder => 'Username' %>
+  <%= f.input :email, :placeholder => "email@domain.com" %>
+  <%= f.input :password, :label => 'Password' %>
+  <%= f.input :password_confirmation %>
+  <% if EdgeCaptcha::Engine.config.recaptcha[:enable] %>
+      <%= render '/shared/recaptcha' %>
+    <% unless @user.errors[:recaptcha].empty? %>
+      <small class="error recaptcha"><%= display_all_error_messages @user, :recaptcha %></small>
+    <% end %>
+  <% end %>
+  <hr />
+  <%= f.submit "Create new account", :class => "nice large radius blue button" %>
+<% end %>
