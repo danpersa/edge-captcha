@@ -7,11 +7,11 @@ require "edge-captcha/version"
 Gem::Specification.new do |s|
   s.name        = "edge-captcha"
   s.version     = EdgeCaptcha::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of EdgeCaptcha."
-  s.description = "TODO: Description of EdgeCaptcha."
+  s.authors     = ["Dan Persa"]
+  s.email       = ["dan.persa@gmail.com"]
+  s.homepage    = "danpersablog.wordpress.com"
+  s.summary     = "Rails mountable engine, that provides captcha support"
+  s.description = "Rails mountable engine, that provides captcha support"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
