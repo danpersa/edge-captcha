@@ -2,7 +2,7 @@ module EdgeCaptcha
   class Engine < ::Rails::Engine
     isolate_namespace EdgeCaptcha
     config.generators do |g|
-      g.test_framework      :rspec, :view_specs => false
+      g.test_framework      :rspec
       g.fixture_replacement :factory_girl
       g.orm                 :mongoid
     end
