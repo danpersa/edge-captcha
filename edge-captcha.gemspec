@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = EdgeCaptcha::VERSION
   s.authors     = ["Dan Persa"]
   s.email       = ["dan.persa@gmail.com"]
-  s.homepage    = "danpersablog.wordpress.com"
+  s.homepage    = "https://github.com/danpersa/edge-captcha"
   s.summary     = "Rails mountable engine, that provides captcha support"
   s.description = "Rails mountable engine, that provides captcha support"
 
