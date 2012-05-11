@@ -2,10 +2,11 @@
     <!-- this is for recaptcha -->
     <script>
         var RecaptchaOptions = {
-            theme : 'white'
+            theme : 'white',
+            lang : 'en'
         };
     </script>
-    <%= javascript_include_tag "http://www.google.com/recaptcha/api/challenge?k=#{EdgeCaptcha::Engine.config.recaptcha[:public_key]}" %>
+    <%= javascript_include_tag "http://www.google.com/recaptcha/api/challenge?k=#{EdgeCaptcha::Engine.config.recaptcha[:public_key]}&hl=en" %>
     <noscript>
       <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Len6sISAAAAAFjJaGLIU7IxEEheifrB8HY2AQj7#{EdgeCaptcha::Engine.config.recaptcha[:public_key]}" height="300" width="500" frameborder="0"></iframe>
       <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
