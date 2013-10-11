@@ -18,7 +18,7 @@ gemspec
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
-  gem 'spork', '~> 0.9.0.rc'
+  gem 'spork', '~> 0.9.2'
   gem 'capybara', :git => 'https://github.com/jnicklas/capybara.git'
   gem 'launchy'
   gem 'watchr'
